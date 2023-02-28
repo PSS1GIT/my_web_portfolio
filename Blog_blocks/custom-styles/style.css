@@ -1,0 +1,1688 @@
+/*---------------------------------Імпорт шрифтів--------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap');
+/*---------------------------------Імпорт шрифтів--------------------------------------*/
+
+/*---------------------------------Кнопка1--------------------------------------*/
+        #button1 {
+            cursor: pointer;
+            text-transform: uppercase;
+            font-size: calc(18px + 10 * (100vw / 1600));
+            line-height: calc(36px + 36 * (100vw / 1600));
+            font-weight: 700;
+            letter-spacing: 3;
+            border-radius: 10px;
+            background-color: #78b964;
+            color: #ffffff;
+            border: none;
+        }
+        #button1:hover {
+            box-shadow: 0px -5px 10px 0px rgba(0, 0, 0, 0.5);
+            transition: all 0.25s ease-in;
+        }
+        #button1:active {
+            transform: scale(0.9);
+        }
+/*---------------------------------Кнопка1--------------------------------------*/
+
+/*---------------------------------Кнопка2--------------------------------------*/
+        #button2 {
+            cursor: pointer;
+            text-transform: uppercase;
+            font-size: calc(18px + 10 * (100vw / 1600));
+            line-height: calc(36px + 36 * (100vw / 1600));
+            font-weight: 700;
+            letter-spacing: 3;
+            color:#dad600;
+            background-image: linear-gradient(to left,transparent,transparent 50%,#dad600 50%,#dad600);
+            background-position: 100% 0;
+            background-size: 200% 100%;
+            transition: all .25s ease-in;
+            border: 1px solid #dad600;
+        }
+        #button2:hover {
+            background-position: 0 0;
+            color:#fff;
+        }
+        #button2:active {
+            transform: scale(0.9);
+        }
+/*---------------------------------Кнопка2--------------------------------------*/
+
+/*---------------------------------Кнопка3--------------------------------------*/
+        #button3 {
+            cursor: pointer;
+            text-transform: uppercase;
+            font-size: calc(18px + 10 * (100vw / 1600));
+            line-height: calc(36px + 36 * (100vw / 1600));
+            font-weight: 700;
+            letter-spacing: 3;
+            border-radius: 84px;
+            background: #f1f1f1;
+            color: #474747;
+            transition: all 0.3s ease 0s;
+            border: 2px solid #4691cf;
+        }
+        #button3:hover {
+            background: #4691cf;
+            color: #fff;
+        }
+        #button3:active {
+            transform: scale(0.9);
+        }
+/*---------------------------------Кнопка3--------------------------------------*/
+
+/*---------------------------------Кнопка4--------------------------------------*/
+        #button4 {
+            cursor: pointer;
+            text-transform: uppercase;
+            font-size: calc(18px + 10 * (100vw / 1600));
+            line-height: calc(36px + 36 * (100vw / 1600));
+            font-weight: 700;
+            letter-spacing: 3;
+            padding-left: 25%;
+            display: inline-block;
+            position: relative;
+            -webkit-transition: all 0.3s;
+            -moz-transition: all 0.3s;
+            transition: all 0.3s;
+            background: #e74c3c;
+            color: #fff;
+            border-radius: 0 0 10px 10px;
+            border: none;
+        }
+        #button4::before {
+            content: '✉';
+            font-size: calc(18px + 10 * (100vw / 1600));
+            line-height: calc(36px + 36 * (100vw / 1600));
+            font-weight: 400;
+            position: absolute;
+            height: 100%;
+            left: 0;
+            top: 0;
+            width: 25%;
+            background: rgba(0,0,0,0.15);
+            border-radius: 0 0 0 10px;
+        }
+        #button4:hover {
+            background: #c0392b;
+        }
+        #button4:active {
+            background: #c0392b;
+            top: 2px;
+        }
+/*---------------------------------Кнопка4--------------------------------------*/
+
+/*---------------------------------Кнопка5--------------------------------------*/
+        #button5 {
+            cursor: pointer;
+            text-transform: uppercase;
+            font-size: calc(18px + 10 * (100vw / 1600));
+            line-height: calc(36px + 36 * (100vw / 1600));
+            font-weight: 700;
+            letter-spacing: 3;
+            padding-left: 25%;
+            display: inline-block;
+            position: relative;
+            -webkit-transition: all 0.3s;
+            -moz-transition: all 0.3s;
+            transition: all 0.3s;
+            background-color: #52ACFF;
+            background-image: linear-gradient(180deg, #52ACFF 25%, #FFE32C 100%);
+            color: #fff;
+            border: none;
+        }
+        #button5::before {
+            content: '❤';
+            font-size: calc(18px + 10 * (100vw / 1600));
+            line-height: calc(36px + 36 * (100vw / 1600));
+            font-weight: 400;
+            position: absolute;
+            height: 100%;
+            left: 0;
+            top: 0;
+            width: 25%;
+            background: rgba(0,0,0,0.15);
+        }
+        #button5:hover {
+            background-color: #52ACFF;
+            background-image: linear-gradient(0deg, #52ACFF 25%, #FFE32C 100%);
+        }
+        #button5:active {
+            background: rgba(0,0,0,0.5);
+            top: 2px;
+        }
+/*---------------------------------Кнопка5--------------------------------------*/
+
+/*---------------------------------Стилізація Блоку 1--------------------------------------*/
+.block-1 { 
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 20px 0;
+    background-color: #dff2fe;
+    display: flex;
+    justify-content: space-between;
+    max-height: 400px;
+}
+.content-box-1 {
+    flex: 0 0 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.header-1 {
+    text-align: center;
+    text-transform: uppercase;
+    border: 1px solid rgb(255, 174, 88, 0.5);
+    margin: 40px;
+    padding: 20px;
+    background-color: #FDFDDACC;
+}
+.header-1 .title-1 {
+    
+}
+.header-1 .subtitle-1 {
+    
+}
+.btn-block-1 {
+    width: 60%;
+    margin: 0 auto;
+    padding: 10px;
+}
+.btn-block-1 button {
+    width: 100%;
+}
+.foto-1 {
+    flex: 0 0 40%;
+    padding: 0 20px;
+}
+.foto-1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/*---------------------------------Адаптив--------------------------------------*/
+@media (max-width: 991px) {.content-box-1{flex: 0 0 70%;}.foto-1{flex: 0 0 30%;}}
+@media (max-width: 767px) {.block-1{flex-wrap: wrap;max-height: none;}.content-box-1,.foto-1{flex: 0 0 100%;margin-top: 20px;}.header-1{margin: 0 20px 20px}}
+@media (max-width: 480px) {.header-1{margin: 0 20px 20px;}}
+/*---------------------------------Адаптив--------------------------------------*/
+
+/*---------------------------------Стилізація Блоку 1--------------------------------------*/
+
+
+/*---------------------------------Стилізація Блоку 2--------------------------------------*/
+.block-2 { 
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 20px 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.3) ), url('https://stachema.ua/image/logo-beton-layout.webp') 50% 50%/cover no-repeat;
+    display: flex;
+    justify-content: space-between;
+    min-height: 400px;
+}
+.content-box-2 {
+    flex: 0 0 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.header-2 {
+    text-align: center;
+    text-transform: uppercase;
+    border: 1px solid rgb(255, 174, 88, 0.5);
+    margin: 0 40px 20px;
+    padding: 20px;
+    background-color: #FDFDDACC;
+}
+.header-2 .title-2 {
+    
+}
+.header-2 .subtitle-2 {
+    
+}
+.btn-block-2 {
+    width: 60%;
+    margin: 0 auto;
+    padding: 10px;
+}
+.btn-block-2 button {
+    width: 100%;
+}
+.foto-2 {
+    flex: 0 0 35%;
+    padding: 0 20px;
+}
+.foto-2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/*---------------------------------Адаптив--------------------------------------*/
+@media (max-width: 991px) {.content-box-2{flex: 0 0 70%;}.foto-2{flex: 0 0 30%;}}
+@media (max-width: 767px) {.block-2{flex-wrap: wrap;}.content-box-2,.foto-2{flex: 0 0 100%;margin-top: 20px;}.foto-2{display: none;}}
+@media (max-width: 480px) {.header-2{margin: 0 20px 20px;}}
+/*---------------------------------Адаптив--------------------------------------*/
+
+/*---------------------------------Стилізація Блоку 2--------------------------------------*/
+
+
+/*---------------------------------Стилізація Блоку 3--------------------------------------*/
+.block-3 { 
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 20px 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.3) ), url('https://stachema.ua/image/logo-beton-layout.webp') 50% 50%/cover no-repeat;
+    display: flex;
+    justify-content: space-between;
+}
+.content-box-3 {
+    flex: 0 0 65%;
+}
+.header-3 {
+    text-align: center;
+    text-transform: uppercase;
+    border: 1px solid rgb(255, 174, 88, 0.5);
+    margin: 0 40px 20px;
+    padding: 20px;
+    background-color: #FDFDDACC;
+}
+.header-3 .title-3 {
+    
+}
+.header-3 .subtitle-3 {
+    
+}
+.inform-3 {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 20px;
+}
+.card-3 {
+    flex: 0 0 30%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+.icon-3 {
+    margin: 20px;
+}
+.icon-3 img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 20px;
+}
+.holder-3 {
+
+}
+.item-3 {
+    padding: 10px;
+    background-color: rgba(120, 185, 100, 0.3);
+}
+.btn-block-3 {
+    width: 60%;
+    margin: 0 auto;
+    padding: 10px;
+}
+.btn-block-3 button {
+    width: 100%;
+}
+.foto-3 {
+    flex: 0 0 35%;
+    padding: 0 20px;
+}
+.foto-3 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/*---------------------------------Адаптив--------------------------------------*/
+@media (max-width: 991px) {.card-3{flex: 0 0 32%;}.content-box-3{flex: 0 0 70%;}.foto-3{flex: 0 0 30%;}}
+@media (max-width: 767px) {.block-3,.inform-3{flex-wrap: wrap;}.content-box-3,.foto-3{flex: 0 0 100%;margin-top: 20px;}.card-3{flex: 0 0 48%;}.icon-3{margin: 40px 40px 10px 40px;}}
+@media (max-width: 480px) {.card-3{flex: 0 0 100%;}.header-3{margin: 0 20px 20px;}.holder-3{margin: 20px 0;}}
+/*---------------------------------Адаптив--------------------------------------*/
+
+/*---------------------------------Стилізація Блоку 3--------------------------------------*/
+
+
+/*---------------------------------Стилізація Блоку 4--------------------------------------*/
+.block-4 { 
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 20px 0;
+    background-color: #f1f1f1;
+    display: flex;
+    justify-content: space-between;
+}
+.content-box-4 {
+    flex: 0 0 65%;
+}
+.header-4 {
+    text-align: center;
+    text-transform: uppercase;
+    border: 1px solid rgb(255, 174, 88, 0.5);
+    margin: 0 40px 20px;
+    padding: 20px;
+    background-color: #FDFDDA;
+}
+.header-4 .title-4 {
+    
+}
+.header-4 .subtitle-4 {
+    
+}
+.inform-4 {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 20px;
+}
+.card-4 {
+    flex: 0 0 30%;
+    display: flex;
+    flex-direction: column;
+}
+.icon-4 {
+
+}
+.icon-4 img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 20px;
+}
+.holder-4 {
+    margin: 20px;
+}
+.item-4 {
+    padding: 10px;
+    background-color: rgba(120, 185, 100, 0.3);
+}
+.btn-block-4 {
+    width: 60%;
+    margin: 0 auto;
+    padding: 10px;
+}
+.btn-block-4 button {
+    width: 100%;
+}
+.foto-4 {
+    flex: 0 0 35%;
+    padding: 0 20px;
+}
+.foto-4 img {
+    width: 100%;
+    object-fit: contain;
+}
+/*---------------------------------Адаптив--------------------------------------*/
+@media (max-width: 991px) {.card-4{flex: 0 0 32%;}.content-box-4{flex: 0 0 70%;}.foto-4{flex: 0 0 30%;}}
+@media (max-width: 767px) {.block-4,.inform-4{flex-wrap: wrap;}.content-box-4,.foto-4{flex: 0 0 100%;margin-top: 20px;}.card-4{flex: 0 0 48%;}}
+@media (max-width: 480px) {.card-4{flex: 0 0 100%;}.header-4{margin: 0 20px 20px;}.holder-4{margin: 20px 0;}}
+/*---------------------------------Адаптив--------------------------------------*/
+
+/*---------------------------------Стилізація Блоку 4--------------------------------------*/
+
+
+/*---------------------------------Стилізація Блоку 5--------------------------------------*/
+.block-5 { 
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 20px 0;
+    background-color: #dff2fe;
+}
+.inform-5 {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 20px;
+}
+.card-5 {
+    flex: 0 0 25%;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.25s ease-in;
+}
+.card-5:hover {
+    transform: scaleX(105%)
+}
+.foto-5 {
+
+}
+.foto-5 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.holder-5 {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+.item-5 {
+    padding: 10px;
+    background-color: rgba(120, 185, 100, 0.5);
+}
+
+/*---------------------------------Адаптив--------------------------------------*/
+@media (max-width: 991px) {.card-5{flex: 0 0 30%;}}
+@media (max-width: 767px) {.inform-5{flex-wrap: wrap;}.card-5{flex: 0 0 48%;margin-top: 20px;}}
+@media (max-width: 480px) {.card-5{flex: 0 0 100%;}}
+/*---------------------------------Адаптив--------------------------------------*/
+
+/*---------------------------------Стилізація Блоку 5--------------------------------------*/
+
+/*---------------------------------Стилізація Блоку 6--------------------------------------*/
+.block-6 { 
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 20px 0;
+    background-color: #dff2fe;
+}
+.inform-6 {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 20px 60px;
+}
+.card-6 {
+    flex: 0 0 20%;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.25s ease-in;
+}
+.card-6:hover {
+    transform: translateY(20px);
+}
+.foto-6 {
+
+}
+.foto-6 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.holder-6 {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+.item-6 {
+    padding: 10px;
+    background-color: rgba(120, 185, 100, 0.5);
+}
+
+/*---------------------------------Адаптив--------------------------------------*/
+@media (max-width: 991px) {.card-6{flex: 0 0 24%;}}
+@media (max-width: 767px) {.inform-6{flex-wrap: wrap;}.card-6{flex: 0 0 48%;margin-top: 20px;}}
+@media (max-width: 480px) {.card-6{flex: 0 0 100%;}}
+/*---------------------------------Адаптив--------------------------------------*/
+
+/*---------------------------------Стилізація Блоку 6--------------------------------------*/
+
+/*---------------------------------Стилізація Блоку 7--------------------------------------*/
+.block-7 { 
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 20px 0;
+    background-color: #FDFDDA;
+}
+.inform-7 {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 20px 20px;
+}
+.card-7 {
+    flex: 0 0 32%;
+}
+.holder-7 {
+    display: flex;
+    justify-content: space-between;
+}
+.item-7 {
+    flex: 0 0 60%;
+    padding: 10px;
+    background-color: rgba(120, 185, 100, 0.3);
+}
+.icon-7 {
+    flex: 0 0 40%;
+}
+.icon-7 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0 20px 20px 0;
+}
+.btn-block-7 {
+    width: 40%;
+    margin: 0 auto;
+    padding: 10px;
+}
+.btn-block-7 button {
+    width: 100%;
+}
+/*---------------------------------Адаптив--------------------------------------*/
+@media (max-width: 991px) {}
+@media (max-width: 767px) {.inform-7{flex-wrap: wrap;}.card-7{flex: 0 0 100%;margin-top: 20px;}}
+@media (max-width: 480px) {}
+/*---------------------------------Адаптив--------------------------------------*/
+
+/*---------------------------------Стилізація Блоку 7--------------------------------------*/
+
+/*---------------------------------Стилізація Блоку 8--------------------------------------*/
+.block-8 { 
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 20px 0;
+    background-color: #FDFDDA;
+}
+.inform-8 {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 20px 20px;
+}
+.card-8 {
+    flex: 0 0 49%;
+}
+.holder-8 {
+    display: flex;
+    justify-content: space-between;
+}
+.item-8 {
+    flex: 0 0 60%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: rgba(120, 185, 100, 0.3);
+}
+.item-8 p {
+    flex: 1 1 50%;
+}
+.icon-8 {
+    flex: 0 0 40%;
+}
+.icon-8 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0 20px 20px 0;
+}
+.btn-block-8 {
+    width: 40%;
+    margin: 0 auto;
+    padding: 10px;
+}
+.btn-block-8 button {
+    width: 100%;
+}
+/*---------------------------------Адаптив--------------------------------------*/
+@media (max-width: 991px) {}
+@media (max-width: 767px) {.inform-8{flex-wrap: wrap;}.card-8{flex: 0 0 100%;margin-top: 20px;}}
+@media (max-width: 480px) {.item-8 {flex-direction: column;}.item-8 p{flex: auto;}}
+/*---------------------------------Адаптив--------------------------------------*/
+
+/*---------------------------------Стилізація Блоку 8--------------------------------------*/
+
+/*---------------------------------Стилізація Блоку 9--------------------------------------*/
+.block-9 { 
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #f1f1f1;
+    display: flex;
+    justify-content: space-between;
+    min-height: 400px;
+}
+.header-9 {
+    text-align: center;
+    border: 1px solid rgb(255, 174, 88, 0.5);
+    padding: 20px;
+    background-color: #FDFDDA;
+}
+.header-9 .title-9 {
+    text-transform: uppercase;
+}
+.header-9 .subtitle-9 {
+    text-transform: uppercase;
+}
+.inform-9 {
+    flex: 0 0 48%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    order: 1; /* Міняємо блоки місцями */
+}
+.text-9 {
+    height: 100%;
+    padding: 10px;
+    margin: 20px 0 0 0;
+    border: 1px solid rgb(255, 174, 88, 0.5);
+    background-color: rgba(192, 57, 43, 0.3);
+}
+.media-9 {
+    flex: 0 0 50%;
+    order: 2; /* Міняємо блоки місцями */
+}
+.media-9 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*---------------------------------Адаптив--------------------------------------*/
+@media (max-width: 991px) {}
+@media (max-width: 767px) {.block-9{flex-wrap: wrap;}.inform-9{flex: 1 1 100%}.media-9{flex: 1 1 100%;margin: 40px 0}}
+@media (max-width: 480px) {.btn-block-9{width: 100%}}
+/*---------------------------------Адаптив--------------------------------------*/
+
+/*---------------------------------Стилізація Блоку 9--------------------------------------*/
+
+
+/*---------------------------------Стилізація Блоку 10--------------------------------------*/
+.block-10 { 
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #f1f1f1;
+    display: flex;
+    justify-content: space-between;
+    min-height: 400px;
+}
+.header-10 {
+    text-align: center;
+    border: 1px solid rgb(255, 174, 88, 0.5);
+    padding: 20px;
+    background-color: #FDFDDA;
+}
+.header-10 .title-10 {
+    text-transform: uppercase;
+}
+.header-10 .subtitle-10 {
+    text-transform: uppercase;
+}
+.inform-10 {
+    flex: 0 0 48%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    order: 1; /* Міняємо блоки місцями */
+}
+.text-10 {
+    height: 100%;
+    padding: 10px;
+    margin: 20px 0 0 0;
+    border: 1px solid rgb(255, 174, 88, 0.5);
+    background-color: rgba(192, 57, 43, 0.3);
+}
+.media-10 {
+    flex: 0 0 50%;
+    order: 2; /* Міняємо блоки місцями */
+}
+.media-10 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*---------------------------------Адаптив--------------------------------------*/
+@media (max-width: 991px) {}
+@media (max-width: 767px) {.block-10{flex-wrap: wrap;}.inform-10{flex: 1 1 100%}.media-10{flex: 1 1 100%;margin: 40px 0}}
+@media (max-width: 480px) {.btn-block-10{width: 100%}}
+/*---------------------------------Адаптив--------------------------------------*/
+
+/*---------------------------------Стилізація Блоку 10--------------------------------------*/
+
+
+/*---------------------------------Стилізація Блоку 11--------------------------------------*/
+.block-11 { 
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #f1f1f1;
+    display: flex;
+    justify-content: space-between;
+    min-height: 500px;
+}
+.header-11 {
+    text-align: center;
+    border: 1px solid rgb(255, 174, 88, 0.5);
+    padding: 20px;
+    background-color: #FDFDDA;
+}
+.header-11 .title-11 {
+    text-transform: uppercase;
+}
+.header-11 .subtitle-11 {
+    text-transform: uppercase;
+}
+.inform-11 {
+    flex: 0 0 48%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    order: 1; /* Міняємо блоки місцями */
+}
+.text-11 {
+    height: 100%;
+    padding: 10px;
+    margin: 20px 0 0 0;
+    border: 1px solid rgb(255, 174, 88, 0.5);
+    background-color: rgba(192, 57, 43, 0.3);
+}
+.media-11 {
+    flex: 0 0 50%;
+    order: 2; /* Міняємо блоки місцями */
+}
+.media-11 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*---------------------------------Адаптив--------------------------------------*/
+@media (max-width: 991px) {}
+@media (max-width: 767px) {.block-11{flex-wrap: wrap;}.inform-11{flex: 1 1 100%}.media-11{flex: 1 1 100%;margin: 40px 0}}
+@media (max-width: 480px) {.btn-block-11{width: 100%}}
+/*---------------------------------Адаптив--------------------------------------*/
+
+/*---------------------------------Стилізація Блоку 11--------------------------------------*/
+
+
+/*---------------------------------Стилізація Блоку 12--------------------------------------*/
+.block-12 { 
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #f1f1f1;
+    display: flex;
+    justify-content: space-between;
+    min-height: 500px;
+}
+.header-12 {
+    text-align: center;
+    border: 1px solid rgb(255, 174, 88, 0.5);
+    padding: 20px;
+    background-color: #FDFDDA;
+}
+.header-12 .title-12 {
+    text-transform: uppercase;
+}
+.header-12 .subtitle-12 {
+    text-transform: uppercase;
+}
+.inform-12 {
+    flex: 0 0 48%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    order: 1; /* Міняємо блоки місцями */
+}
+.text-12 {
+    height: 100%;
+    padding: 10px;
+    margin: 20px 0 60px;
+    border: 1px solid rgb(255, 174, 88, 0.5);
+    background-color: rgba(192, 57, 43, 0.3);
+}
+.btn-block-12  {
+    width: 100%;
+}
+.btn-block-12 button {
+    width: 100%;
+}
+.media-12 {
+    flex: 0 0 50%;
+    order: 2; /* Міняємо блоки місцями */
+}
+.media-12 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*---------------------------------Адаптив--------------------------------------*/
+@media (max-width: 991px) {}
+@media (max-width: 767px) {.block-12{flex-wrap: wrap;}.inform-12{flex: 1 1 100%}.media-12{flex: 1 1 100%;margin: 40px 0}.btn-block-12{width: 60%;margin: 0 auto;}.text-12{margin: 20px 0}}
+@media (max-width: 480px) {.btn-block-12{width: 100%}}
+/*---------------------------------Адаптив--------------------------------------*/
+
+/*---------------------------------Стилізація Блоку 12--------------------------------------*/
+
+
+/*---------------------------------Стилізація Блоку 13--------------------------------------*/
+.block-13 { 
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 20px 30px 70px 30px;
+    background-color: #dff2fe;
+}
+.inform-13 {
+    display: flex;
+    justify-content: space-between;
+}
+.card-13 {
+    position: relative;
+    margin: 10px;
+}
+.card-13 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.card-13:hover {
+
+}
+.holder-13 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: 	rgba(255, 227, 44, 0.8);
+    margin: 20px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+.item-13 {
+
+}
+.item-descript-13 {
+
+}
+.btn-block-13 {
+    width: 40%;
+    margin: 0 auto;
+    padding: 10px;
+}
+.btn-block-13 button {
+    width: 100%;
+}
+
+/*---------------------------------Адаптив--------------------------------------*/
+@media (max-width: 991px) {}
+@media (max-width: 767px) {.inform-13 {flex-wrap: wrap;}.card-13{flex: 0 1 45%}}
+@media (max-width: 480px) {.card-13{flex: 1 1 100%}.btn-block-13{width:100%}}
+/*---------------------------------Адаптив--------------------------------------*/
+
+/*---------------------------------Стилізація Блоку 13--------------------------------------*/
+
+/*---------------------------------Стилізація Блоку 14--------------------------------------*/
+.block-14 { 
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 20px 40px;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.3) ), url('https://stachema.ua/image/logo-beton-layout.webp') 0 0/cover no-repeat;
+}
+.header-14 {
+    text-align: center;
+    border: 1px solid rgb(255, 174, 88, 0.5);
+    margin: 0 20px;
+    padding: 20px;
+    background-color: #FDFDDA;
+    max-width: 700px;
+}
+.header-14 .title-14 {
+    text-transform: uppercase;
+}
+.header-14 .subtitle-14 {
+    text-transform: uppercase;
+}
+.header-14 .header-descript-14 {
+    margin-top: 1%;
+    text-align: left;
+}
+.inform-14 {
+    margin: 20px;
+    max-width: 700px;
+}
+.holder-14 {
+    display: flex;
+    margin: 20px 0;
+    border: 1.5px solid #5e7f96;
+    border-radius: 20px;
+    max-height: 150px;
+    transition: all 0.25s ease-in;
+    max-width: 600px;
+}
+.holder-14:hover {
+    max-width: 700px;
+}
+.icon-14 {
+    flex: 0 0 20%;
+}
+.icon-14 img {
+    width: 111%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px 0 0 20px;
+}
+.item-14 {
+    flex: 0 0 80%;
+    border-left: 1.5px solid #5e7f96;
+    border-radius: 20px;
+    background-color: #dff2fe;
+}
+.item-title-14 {
+    
+}
+.item-subtitle-14 {
+   
+}
+.item-descript-14 {
+    padding: 10px;
+}
+.btn-block-14  {
+    max-width: 400px;
+}
+.btn-block-14 button {
+    width: 100%;
+}
+
+/*---------------------------------Адаптив--------------------------------------*/
+@media (max-width: 991px) {}
+@media (max-width: 767px) {.header-14 {margin: 10px;}}
+@media (max-width: 480px) {.block-14 {padding: 10px;}}
+/*---------------------------------Адаптив--------------------------------------*/
+
+/*---------------------------------Стилізація Блоку 14--------------------------------------*/
+
+/*---------------------------------Стилізація Блоку 15--------------------------------------*/
+.block-15 { 
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 20px 0;
+    background-color: #f1f1f1;
+}
+.header-15 {
+    text-align: center;
+    text-transform: uppercase;
+    border: 1px solid rgb(255, 174, 88, 0.5);
+    margin: 0 20px;
+    padding: 20px;
+    background-color: #FDFDDA;
+}
+.header-15 .title-15 {
+    
+}
+.header-15 .subtitle-15 {
+    
+}
+.inform-15 {
+    display: flex;
+    justify-content: space-between;
+}
+.foto-15 {
+    flex: 0 0 25%;
+    margin: 40px 20px;
+    position: relative;
+}
+.foto-15::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 50px;
+    transition: all 0.25s ease-in;
+}
+.foto-15:hover::after {
+    background: rgba(0, 0, 0, 0);
+}
+.foto-15 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50px;
+}
+.card-15 {
+    padding: 15px;
+    background-color: #ea9059;
+    background-image: linear-gradient(45deg, #ea9059 0%, #fad961 100%);
+    flex: 1 1 70%;
+    margin: 20px;
+}
+.second-title-15, .second-subtitle-15 {
+    text-align: center;
+}
+.item-descript-15 {
+    margin-top: 1%;
+}
+
+
+/*---------------------------------Адаптив--------------------------------------*/
+@media (max-width: 991px) {}
+@media (max-width: 767px) {.header-15,.card-15 {margin: 10px;}}
+@media (max-width: 480px) {.inform-15 {flex-wrap: wrap;}.card-15,.foto-15{flex: 1 1 100%;}}
+/*---------------------------------Адаптив--------------------------------------*/
+
+/*---------------------------------Стилізація Блоку 15--------------------------------------*/
+
+/*---------------------------------Стилізація Блоку 16--------------------------------------*/
+.block-16 { 
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 20px 0;
+    background-color: #f1f1f1;
+}
+.header-16 {
+    text-align: center;
+    text-transform: uppercase;
+    border: 1px solid rgb(255, 174, 88, 0.5);
+    margin: 0 20px;
+    padding: 20px;
+    background-color: #FDFDDA;
+}
+.header-16 .title-16 {
+    
+}
+.header-16 .subtitle-16 {
+    
+}
+.inform-16 {
+    display: flex;
+    justify-content: space-between;
+}
+.card-16 {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    transition: all 0.25s ease-in;
+    border-radius: 20px;
+    background-color: #F41308;
+    background-image: linear-gradient(180deg, #FAD961 0%, #ea9059 100%);
+    flex: 0 0 30%;
+    margin: 20px;
+}
+.card-16:hover {
+    transform: scale(1.03);
+}
+.holder-16 {
+    display: flex;
+    justify-content: space-between;
+}
+.icon-16 {
+    flex: 0 0 30%;
+}
+.icon-16 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.item-16 {
+    padding: 5px 5px 5px 20px;
+    flex: 0 0 70%;
+}
+.item-title-16 {
+    
+}
+.item-subtitle-16 {
+   
+}
+.item-descript-16 {
+    margin-top: 1%;
+}
+.text-16 {
+    text-align: center;
+    height: 100%;
+    padding: 5%;
+    margin: 10px 0;
+    background-color: rgb(255, 255, 255, 0.3) ;
+}
+
+/*---------------------------------Адаптив--------------------------------------*/
+@media (max-width: 991px) {}
+@media (max-width: 767px) {.inform-16 {flex-wrap: wrap;}.card-16 {flex: 0 1 45%;}.header-16,.card-16 {margin: 10px;}}
+@media (max-width: 480px) {.card-16{flex: 1 1 100%;}}
+/*---------------------------------Адаптив--------------------------------------*/
+
+/*---------------------------------Стилізація Блоку 16--------------------------------------*/
+
+/*---------------------------------Стилізація Блоку 17--------------------------------------*/
+.block-17 { 
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 20px 0;
+    background-color: #f1f1f1;
+}
+.header-17 {
+    text-align: center;
+    text-transform: uppercase;
+    border: 1px solid rgb(255, 174, 88, 0.5);
+    margin: 0 20px;
+    padding: 20px;
+    background-color: #FDFDDA;
+}
+.header-17 .title-17 {
+    
+}
+.header-17 .subtitle-17 {
+    
+}
+.inform-17 {
+    display: flex;
+    justify-content: space-between;
+}
+.card-17 {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    transition: all 0.25s ease-in;
+    border-radius: 20px;
+    background-color: #F41308;
+    background-image: linear-gradient(180deg, #FAD961 0%, #ea9059 100%);
+    flex: 0 0 30%;
+    margin: 20px;
+}
+.card-17:hover {
+    transform: scale(1.03);
+}
+.holder-17 {
+    display: flex;
+    justify-content: space-between;
+}
+.icon-17 {
+    flex: 0 0 50%;
+}
+.icon-17 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.item-17 {
+    padding: 5px 5px 5px 20px;
+    flex: 0 0 50%;
+}
+.item-title-17 {
+    
+}
+.item-subtitle-17 {
+   
+}
+.item-descript-17 {
+    margin-top: 1%;
+}
+.text-17 {
+    text-align: center;
+    height: 100%;
+    padding: 5%;
+    margin: 10px 0;
+    background-color: rgb(255, 255, 255, 0.3) ;
+}
+
+/*---------------------------------Адаптив--------------------------------------*/
+@media (max-width: 991px) {}
+@media (max-width: 767px) {.inform-17 {flex-wrap: wrap;}.card-17 {flex: 0 1 45%;}.header-17,.card-17 {margin: 10px;}}
+@media (max-width: 480px) {.card-17{flex: 1 1 100%;}}
+/*---------------------------------Адаптив--------------------------------------*/
+
+/*---------------------------------Стилізація Блоку 17--------------------------------------*/
+
+/*---------------------------------Стилізація Блоку 18--------------------------------------*/
+.block-18 { 
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 20px 0;
+    background-color: #f1f1f1;
+}
+.header-18 {
+    text-align: center;
+    text-transform: uppercase;
+    border: 1px solid rgb(255, 174, 88, 0.5);
+    margin: 0 20px;
+    padding: 20px;
+    background-color: #FDFDDA;
+}
+.header-18 .title-18 {
+    
+}
+.header-18 .subtitle-18 {
+    
+}
+.inform-18 {
+    display: flex;
+    justify-content: space-between;
+}
+.card-18 {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    transition: all 0.25s ease-in;
+    border-radius: 20px;
+    background-color: #F41308;
+    background-image: linear-gradient(180deg, #FAD961 0%, #ea9059 100%);
+    flex: 0 0 30%;
+    margin: 20px;
+}
+.card-18:hover {
+    transform: scale(1.03);
+}
+.foto-18 {
+    flex: 0 1 30%;
+    margin: 20px;
+}
+.foto-18 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.holder-18 {
+    display: flex;
+    justify-content: space-between;
+}
+.icon-18 {
+    flex: 0 0 50%;
+}
+.icon-18 img {
+    border-radius: 20px;
+}
+.icon-18 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.item-18 {
+    padding: 5px 5px 5px 20px;
+    flex: 0 0 50%;
+}
+.item-title-18 {
+    
+}
+.item-subtitle-18 {
+   
+}
+.item-descript-18 {
+    margin-top: 1%;
+}
+.text-18 {
+    text-align: center;
+    height: 100%;
+    padding: 5%;
+    margin: 10px 0;
+    background-color: rgb(255, 255, 255, 0.3) ;
+}
+
+/*---------------------------------Адаптив--------------------------------------*/
+@media (max-width: 991px) {}
+@media (max-width: 767px) {.inform-18 {flex-wrap: wrap;}.foto-18 {flex: 1 1 100%;}.card-18 {flex: 0 1 45%;}.header-18,.card-18,.foto-18 {margin: 10px;}}
+@media (max-width: 480px) {.foto-18,.card-18{flex: 1 1 100%;}}
+/*---------------------------------Адаптив--------------------------------------*/
+
+/*---------------------------------Стилізація Блоку 18--------------------------------------*/
+
+/*---------------------------------Стилізація Блоку 19--------------------------------------*/
+.block-19 { 
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 50px 20px;
+    background: #f1f1f1;
+}
+.media-19 {
+
+}
+.media-19 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*---------------------------------Адаптив--------------------------------------*/
+@media (max-width: 991px) {}
+@media (max-width: 767px) {}
+@media (max-width: 480px) {}
+/*---------------------------------Адаптив--------------------------------------*/
+
+/*---------------------------------Стилізація Блоку 19--------------------------------------*/
+
+/*---------------------------------Стилізація Блоку 20--------------------------------------*/
+.block-20 { 
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 20px 0;
+    background-color: #f1f1f1;
+}
+.header-20 {
+    text-transform: uppercase;
+    border: 1px solid rgb(255, 174, 88, 0.5);
+    margin: 0 20px;
+    padding: 20px;
+    background-color: #FDFDDA;
+}
+.header-20 .title-20 {
+    
+}
+.stars-20 {
+    display: flex;
+    margin: 10px 20px;
+}
+.stars-20 img {
+    width: 30px;
+    height: 30px;
+}
+.inform-20 {
+    margin: 20px;
+    padding: 20px;
+    background-image: linear-gradient(180deg, #FAD961 0%, #ea9059 100%);
+}
+.crumbs-20 {
+    display: flex;
+    text-transform: uppercase;
+    color: #777777;
+    font-weight: 700;
+}
+.crumbs-20 p::after {
+    content: '|';
+    margin: 0 10px;
+}
+.crumbs-20 p:first-child {
+    color: #000000;
+}
+.crumbs-20 p:last-child {
+    text-transform: capitalize;
+    color: #940700;
+}
+.crumbs-20 p:last-child::after {
+    content: '';
+}
+.text-20 {
+    padding: 10px;
+    margin: 20px 10px;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+.foto-20 {
+    display: flex;
+    flex-wrap: wrap;
+}
+.foto-20 img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin: 5px 10px 5px 0;
+}
+.footer-info-20 {
+    display: flex;
+}
+.footer-info-20 p span {
+    margin: 0 10px;
+}
+.opentext-20 {
+    padding: 10px;
+    margin: 20px 10px 0;
+    background-color: rgba(255, 255, 255, 0.3);
+    overflow: hidden;
+}
+.block-hide-20 {
+    background-color: rgba(255, 255, 255, 0.3);
+    text-align: left;
+    padding: 10px;
+    margin: 0 10px 20px;
+}
+.show-hide-20 {
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+}
+/*---------------------------------Адаптив--------------------------------------*/
+@media (max-width: 991px) {}
+@media (max-width: 767px) {.foto-20 {justify-content: space-around}}
+@media (max-width: 480px) {.foto-20 img {width: 120px;height: 120px;}}
+/*---------------------------------Адаптив--------------------------------------*/
+
+/*---------------------------------Стилізація Блоку 20--------------------------------------*/
+
+
+/*---------------------------------Стилізація Блоку 21--------------------------------------*/
+.block-21 { 
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 20px 0;
+    background-color: #f1f1f1;
+}
+.header-21 {
+    text-align: center;
+    text-transform: uppercase;
+    border: 1px solid rgb(255, 174, 88, 0.5);
+    margin: 0 20px;
+    padding: 20px;
+    background-color: #FDFDDA;
+}
+.accordion {
+    margin: 20px;
+}
+.accordion__item {
+    margin-bottom: 0.5rem;
+    border-radius: 0.25rem;
+    box-shadow: 0 0.125rem 0.25rem rgb(0 0 0 / 15%);
+  }
+
+  .accordion__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem 1rem;
+    color: #fff;
+    font-weight: 500;
+    background-color: #aaaaaa;
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease-out;
+  }
+
+  .accordion__header::after {
+    flex-shrink: 0;
+    width: 1.25rem;
+    height: 1.25rem;
+    margin-left: auto;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-size: 1.25rem;
+    content: "";
+    transition: transform 0.2s ease-out;
+  }
+
+  .accordion__item_show .accordion__header::after,
+  .accordion__item_slidedown .accordion__header::after {
+    transform: rotate(-180deg);
+  }
+
+  .accordion__header:hover {
+    background-color: #ea9059;
+  }
+
+  .accordion__item:not(.accordion__item_show) .accordion__header {
+    border-bottom-right-radius: 0.25rem;
+    border-bottom-left-radius: 0.25rem;
+  }
+
+  .accordion__content {
+    padding: 0.75rem 1rem;
+    background: #fff;
+    border-bottom-right-radius: 0.25rem;
+    border-bottom-left-radius: 0.25rem;
+  }
+
+  .accordion__item:not(.accordion__item_show) .accordion__body {
+    display: none;
+  }
+/*---------------------------------Адаптив--------------------------------------*/
+@media (max-width: 991px) {}
+@media (max-width: 767px) {}
+@media (max-width: 480px) {}
+/*---------------------------------Адаптив--------------------------------------*/
+
+/*---------------------------------Стилізація Блоку 21--------------------------------------*/
+
+
+/*---------------------------------Стилізація Блоку 22--------------------------------------*/
+.block-22 { 
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 20px 0;
+    background-color: #f1f1f1;
+}
+.header-22 {
+    text-align: center;
+    text-transform: uppercase;
+    border: 1px solid rgb(255, 174, 88, 0.5);
+    margin: 0 20px;
+    padding: 20px;
+    background-color: #FDFDDA;
+}
+.header-22 .title-22 {
+    
+}
+.header-22 .subtitle-22 {
+    
+}
+.inform-22 {
+    margin: 20px;
+    padding: 20px;
+    background-image: linear-gradient(180deg, #FAD961 0%, #ea9059 100%);
+}
+/*---------------------------------Адаптив--------------------------------------*/
+@media (max-width: 991px) {}
+@media (max-width: 767px) {.inform-22, .header-22 {flex-wrap: wrap;margin: 10px;}}
+@media (max-width: 480px) {}
+/*---------------------------------Адаптив--------------------------------------*/
+
+/*---------------------------------Стилізація Блоку 22--------------------------------------*/
+
+/*---------------------------------Стилізація Блоку 23--------------------------------------*/
+.block-23 { 
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 20px 0;
+    background-color: #f1f1f1;
+}
+.header-23 {
+    text-align: center;
+    text-transform: uppercase;
+    border: 1px solid rgb(255, 174, 88, 0.5);
+    margin: 0 20px;
+    padding: 20px;
+    background-color: #FDFDDA;
+}
+.header-23 .title-23 {
+    
+}
+.header-23 .subtitle-23 {
+    
+}
+.inform-23 {
+    display: flex;
+    justify-content: space-around;
+}
+.card-23 {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    transition: all 0.25s ease-in;
+    border-radius: 20px;
+    background-color: #F41308;
+    background-image: linear-gradient(180deg, #FAD961 0%, #ea9059 100%);
+    flex: 0 0 30%;
+    margin: 20px;
+}
+.card-23:hover {
+    transform: scale(1.03);
+}
+.holder-23 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.icon-23 {
+
+}
+.icon-23 img {
+    border-radius: 20px;
+}
+.icon-23 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.item-23 {
+    padding: 5px;
+    margin-bottom: 10px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.item-title-23 {
+    
+}
+.item-descript-23 {
+    margin-top: 1%;
+}
+.text-23 {
+    text-align: center;
+    padding: 5%;
+    margin: 10px 0;
+    background-color: rgb(255, 255, 255, 0.3) ;
+}
+.subtext-23 {
+    height: 100%;
+    padding: 5%;
+    margin: 0 0 20px 0;
+    background-color: rgb(255, 255, 255, 0.3) ;
+}
+.subtext-23 p::before {
+    content: '✔';
+    display: inline-block;
+    margin-right: 10px;
+}
+
+/*---------------------------------Адаптив--------------------------------------*/
+@media (max-width: 991px) {}
+@media (max-width: 767px) {.inform-23 {flex-wrap: wrap;}.foto-23 {flex: 1 1 100%;}.card-23 {flex: 0 1 45%;}.header-23,.card-23,.foto-23 {margin: 10px;}}
+@media (max-width: 480px) {.foto-23,.card-23{flex: 1 1 100%;}}
+/*---------------------------------Адаптив--------------------------------------*/
+
+/*---------------------------------Стилізація Блоку 23--------------------------------------*/
